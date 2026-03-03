@@ -131,9 +131,6 @@ body{
   border-color: #bcd3ff;
 }
 
-.separator{
-  margin: 20px 0 10px;
-}
 .comment{
   font-family: var(--code);
   color: #94a3b8;
@@ -230,13 +227,15 @@ body{
 .xp-place{
   font-family: var(--code);
   color: var(--blue2);
-  font-size: 12.5px;
-  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 6px;
 }
 .xp-date{
   font-family: var(--code);
   color: #ef4444;
   font-weight: 900;
+  font-size: 12px;
 }
 
 .bullets{
