@@ -316,6 +316,14 @@ input, textarea{
   color: #64748b;
   font-size: 12px;
 }
+
+#experience .card{
+  margin-bottom: 16px;
+}
+#experience .card:last-child{
+  margin-bottom: 0;
+}
+
 .dot{opacity: 0.7}
 
 /* Responsive */
