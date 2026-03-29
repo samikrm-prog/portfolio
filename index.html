@@ -1,214 +1,338 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sami KARYM • Portfolio</title>
-  <meta name="description" content="Portfolio de Sami KARYM — BUT Informatique (alternance 24 mois)." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sami KARYM — Développeur</title>
+  <meta name="description" content="Portfolio de Sami KARYM — Étudiant en BUT Informatique, recherche alternance développement logiciel." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header class="topbar">
-    <div class="wrap header-grid">
-      <div class="identity">
-        <div class="avatar-wrap">
-          <img class="avatar" src="assets/IMG_0787.PNG" alt="Photo de Sami KARYM" />
-        </div>
 
-        <div class="name">
-          <div class="big">
-            <span class="tag">&lt;/</span>KARYM<br />
-            SAMI<span class="tag">/&gt;</span>
-          </div>
-          <div class="subtitle">
-            RECHERCHE CONTRAT EN APPRENTISSAGE en BUT 2 de 24 mois <br />
-            <span class="accent">PARCOURS A -  DÉVELOPPEMENT</span>
-          </div>
-        </div>
+<nav>
+  <a href="#hero" class="nav-logo">SK<em>.</em></a>
+  <div class="nav-center">
+    <a href="#skills">Compétences</a>
+    <a href="#projects">Projets</a>
+    <a href="#about">Parcours</a>
+  </div>
+  <div class="nav-right">
+    <button class="theme-btn" id="themebtn">
+      <span class="ti" id="themeic">☀</span>
+      <span id="themelb">Mode clair</span>
+    </button>
+    <a href="#contact" class="nav-cta">Contact</a>
+    <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob-nav" id="mobnav">
+  <a href="#skills">Compétences</a>
+  <a href="#projects">Projets</a>
+  <a href="#about">Parcours</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-ey r">Disponible en alternance · 24 mois</div>
+      <h1 class="hero-name r d1">SAMI<br><span class="al">KARYM</span></h1>
+      <p class="hero-lead r d2">
+        Étudiant en <strong>BUT Informatique</strong> à l'IUT d'Orsay, je cherche une alternance en développement logiciel.
+        Passionné par <strong>l'intelligence artificielle</strong> et le <strong>cloud</strong>,
+        je veux transformer des idées complexes en solutions concrètes.
+      </p>
+      <div class="hero-chips r d2">
+        <span class="chip hi">BUT2 — 2j Entreprise / 3j IUT</span>
+        <span class="chip hi">BUT3 — 3j Entreprise / 2j IUT</span>
+        <span class="chip">Île-de-France</span>
+        <span class="chip">Parcours A · Développement</span>
       </div>
-
-      <div class="contact card">
-        <div class="contact-row"><span class="k">Téléphone</span><span class="v">+33 6 37 17 16 85</span></div>
-        <div class="contact-row"><span class="k">E-mail</span><a class="v link" href="mailto:sami.k.educ@gmail.com">sami.k.educ@gmail.com</a></div>
-        <div class="contact-row"><span class="k">LinkedIn</span><a class="v link" href="www.linkedin.com/in/sami-karym-a810a9385" target="_blank" rel="noreferrer">Sami KARYM</a></div>
-        <div class="contact-row"><span class="k">GitHub</span><a class="v link" href="https://github.com/samikrm-prog" target="_blank" rel="noreferrer">samikrm-prog</a></div>
-        <div class="contact-row"><span class="k">Adresse</span><span class="v">92330 Sceaux</span></div>
-
-        <div class="contact-actions">
-          <button id="copyEmail" class="btn">Copier l’e-mail</button>
-          <a class="btn btn-ghost" href="#contact">Me contacter</a>
-        </div>
+      <div class="hero-acts r d3">
+        <a href="#contact" class="bp">✉ Me contacter</a>
+        <a href="https://github.com/samikrm-prog" target="_blank" rel="noreferrer" class="bg">⌥ GitHub</a>
+        <a href="CV_SKA_alternance.pdf" target="_blank" class="bg">↓ Télécharger le CV</a>
       </div>
     </div>
-  </header>
+    <div class="hero-photo r d2">
+      <div class="hero-deco"></div>
+      <div class="img-card">
+        <img src="assets/IMG_0787.PNG" alt="Photo de Sami KARYM" />
+      </div>
+      <div class="hero-status">
+        <span class="dot-live"></span>Open to work · Rentrée 2025
+      </div>
+    </div>
+  </div>
+</section>
 
-  <main class="wrap">
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="slabel r">Compétences</div>
+    <h2 class="stitle r">Ce que je <em>maîtrise</em></h2>
+    <div class="sk-grid">
 
-    <!-- À PROPOS -->
-    <section class="section" id="about">
-      <h2 class="h2">&lt;/À PROPOS/&gt;</h2>
-      <p class="lead">
-        Étudiant passionné en BUT Informatique, je recherche une alternance en développement logiciel
-        pour allier théorie académique et expérience pratique. Motivé par la résolution de problèmes
-        complexes et le travail en équipe.
-      </p>
-    </section>
-
-
-    <!-- COMPÉTENCES -->
-    <section class="section" id="skills">
-      <h2 class="h2">&lt;/COMPÉTENCES/&gt;</h2>
-
-      <div class="grid-2">
-        <div class="card">
-          <h3 class="h3">Langages de programmation</h3>
-          <ul class="chips">
-            <li>Python</li><li>C++</li><li>SQL</li><li>HTML</li><li>CSS</li>
-          </ul>
-
-          <h3 class="h3 mt">Frameworks / Outils</h3>
-          <ul class="chips">
-            <li>VS Code</li><li>Code::Blocks</li><li>SQL Developer</li>
-          </ul>
+      <div class="sk-card r">
+        <div class="sk-head">
+          <div class="sk-ico">{ }</div>
+          <div class="sk-title">Langages</div>
         </div>
+        <div class="bars">
+          <div><div class="b-meta"><span class="b-name">HTML / CSS</span><span class="b-val">80%</span></div><div class="b-track"><div class="b-fill" data-w=".80"></div></div></div>
+          <div><div class="b-meta"><span class="b-name">Python</span><span class="b-val">75%</span></div><div class="b-track"><div class="b-fill" data-w=".75"></div></div></div>
+          <div><div class="b-meta"><span class="b-name">SQL</span><span class="b-val">70%</span></div><div class="b-track"><div class="b-fill" data-w=".70"></div></div></div>
+          <div><div class="b-meta"><span class="b-name">C++</span><span class="b-val">65%</span></div><div class="b-track"><div class="b-fill" data-w=".65"></div></div></div>
+          <div><div class="b-meta"><span class="b-name">Java</span><span class="b-val">45%</span></div><div class="b-track"><div class="b-fill" data-w=".45"></div></div></div>
+          <div><div class="b-meta"><span class="b-name">C# · Shell</span><span class="b-val">35%</span></div><div class="b-track"><div class="b-fill" data-w=".35"></div></div></div>
+        </div>
+      </div>
 
-        <div class="card">
-          <h3 class="h3">Systèmes</h3>
-          <ul class="chips">
-            <li>Windows</li><li>Linux</li>
-          </ul>
-
-          <h3 class="h3 mt">Langues</h3>
-          <div class="kv">
-            <div><span class="k">Français</span><span class="v">Langue maternelle</span></div>
-            <div><span class="k">Anglais</span><span class="v">Niveau B2</span></div>
+      <div class="sk-card r d1">
+        <div class="sk-head">
+          <div class="sk-ico b">⚙</div>
+          <div class="sk-title">Outils & Méthodes</div>
+        </div>
+        <div style="margin-bottom:20px">
+          <div class="subsec">IDEs & Outils</div>
+          <div class="tg">
+            <span class="stag b">VS Code</span><span class="stag b">Code::Blocks</span>
+            <span class="stag b">SQL Developer</span><span class="stag b">Oracle</span>
+            <span class="stag b">GitLab</span><span class="stag b">Power BI</span><span class="stag b">Mocodo</span>
+          </div>
+        </div>
+        <div style="margin-bottom:20px">
+          <div class="subsec">Systèmes</div>
+          <div class="tg">
+            <span class="stag t">Linux</span><span class="stag t">Windows</span>
+          </div>
+        </div>
+        <div>
+          <div class="subsec">Méthodes</div>
+          <div class="tg">
+            <span class="stag g">Méthode Agile</span><span class="stag g">Gestion de projet</span><span class="stag g">MCD / MLD</span>
           </div>
         </div>
       </div>
-    </section>
 
-
-    <!-- PROJETS -->
-    <section class="section" id="projects">
-      <h2 class="h2">&lt;/PROJETS/&gt;</h2>
-
-      <div class="stack">
-        <article class="card project">
-          <div class="project-title">Développement d’un jeu vidéo</div>
-          <div class="project-desc">Comparaison et mise en œuvre de la logique algorithmique (C++)</div>
-        </article>
-
-        <article class="card project">
-          <div class="project-title">Création d’une base de données de gestion d’un restaurant</div>
-          <div class="project-desc">Conception d’une base relationnelle et de requêtes (SQL)</div>
-        </article>
-
-        <article class="card project">
-          <div class="project-title">Rédaction d’un cahier des charges pour un site de voyage</div>
-          <div class="project-desc">Recueil et analyse des besoins</div>
-        </article>
-
-        <article class="card project">
-          <div class="project-title">Création du site web d’une agence de voyages</div>
-          <div class="project-desc">Conception et réalisation d’un site web (HTML et CSS)</div>
-        </article>
-      </div>
-
-    </section>
-
-
-    <!-- EXPÉRIENCES -->
-    <section class="section" id="experience">
-      <h2 class="h2">&lt;/EXPÉRIENCES PROFESSIONNELLES/&gt;</h2>
-
-      <div class="card">
-        <div class="xp-head">
-          <div>
-            <div class="xp-title">Stage de 3ème</div>
-            <div class="xp-place">TÉLÉCOM PARIS</div>
-          </div>
-          <div class="xp-date">2021</div>
+      <div class="sk-card r d2" style="grid-column:span 2">
+        <div class="sk-head">
+          <div class="sk-ico o">🎯</div>
+          <div class="sk-title">Ce que je veux apprendre — IA & Cloud</div>
         </div>
-
-        <ul class="bullets">
-          <li>Découverte des métiers d’enseignant et de doctorant</li>
-          <li>Initiation aux outils de recherche</li>
-        </ul>
-      </div>
-    </section>
-
-
-    <!-- FORMATIONS -->
-    <section class="section" id="education">
-      <h2 class="h2">&lt;/FORMATIONS/&gt;</h2>
-
-      <div class="grid-2">
-        <div class="card">
-          <div class="edu-title">BUT Informatique</div>
-          <div class="edu-meta">
-            <span class="edu-place">IUT D’ORSAY</span>
-            <span class="edu-date">2025 — 2028</span>
-          </div>
-          <div class="edu-desc">Réalisation d’applications : conception, développement, validation</div>
-        </div>
-
-        <div class="card">
-          <div class="edu-title">Baccalauréat général</div>
-          <div class="edu-meta">
-            <span class="edu-place">LYCÉE LAKANAL</span>
-            <span class="edu-date">2022 — 2025</span>
-          </div>
-          <div class="edu-desc">Spécialité mathématique et numérique science informatique</div>
-          <div class="edu-desc">Obtention du baccalauréat</div>
+        <div class="tg">
+          <span class="stag o">Intelligence Artificielle</span>
+          <span class="stag o">Machine Learning</span>
+          <span class="stag o">Cloud Computing</span>
+          <span class="stag o">APIs REST</span>
+          <span class="stag o">Docker</span>
+          <span class="stag o">DevOps</span>
+          <span class="stag o">Data Engineering</span>
+          <span class="stag o">JavaScript avancé</span>
         </div>
       </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <h2 class="h2">&lt;/CONTACT/&gt;</h2>
+    </div>
+  </div>
+</section>
 
-      <div class="grid-2">
-        <div class="card">
-          <p class="p">
-            Mon adresse mail : <a class="link" href="mailto:sami.k.educ@gmail.com">sami.k.educ@gmail.com</a>
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="slabel r">Réalisations</div>
+    <h2 class="stitle r">Mes <em>projets</em></h2>
+    <div class="pj-grid">
+
+      <div class="pj-card feat r">
+        <div>
+          <div class="pj-bar"></div>
+          <div class="pj-ey f">★ Projet phare</div>
+          <span class="pj-em">🎮</span>
+          <div class="pj-name">Jeu vidéo en C++<br>— Méthode Agile</div>
+          <p class="pj-desc">
+            Conception et développement d'un jeu vidéo complet en C++ selon une méthodologie agile.
+            Implémentation d'algorithmique avancée, programmation orientée objet (POO),
+            optimisation des mécanismes de jeu, boucle de rendu, phases de test et débogage intensifs.
+            Travail en équipe avec sprints et revues de code.
           </p>
-          <div class="contact-actions">
-            <a class="btn" href="mailto:sami.k.educ@gmail.com?subject=Alternance%20-%20Contact%20Portfolio">Envoyer un mail</a>
-            <a class="btn btn-ghost" href="https://github.com/samikrm-prog" target="_blank" rel="noreferrer">Voir GitHub</a>
+          <div class="pj-stack">
+            <span class="pj-tag">C++</span><span class="pj-tag">POO</span>
+            <span class="pj-tag">Algorithmique</span><span class="pj-tag">Agile / Scrum</span>
+            <span class="pj-tag">Code::Blocks</span><span class="pj-tag">Débogage</span>
+          </div>
+        </div>
+        <div class="feat-panel">
+          <div class="f-stat"><span class="f-stat-l">Langage principal</span><span class="f-stat-v g">C++</span></div>
+          <div class="f-stat"><span class="f-stat-l">Paradigme</span><span class="f-stat-v">Orienté Objet</span></div>
+          <div class="f-stat"><span class="f-stat-l">Méthode de travail</span><span class="f-stat-v">Agile · Scrum</span></div>
+          <div class="f-stat"><span class="f-stat-l">Phase de test</span><span class="f-stat-v g">Complète</span></div>
+          <div class="f-stat"><span class="f-stat-l">Optimisation</span><span class="f-stat-v g">✓ Réalisée</span></div>
+        </div>
+      </div>
+
+      <div class="pj-card r d1">
+        <div class="pj-bar"></div>
+        <div class="pj-ey">02 — Base de données</div>
+        <span class="pj-em">🍽</span>
+        <div class="pj-name">BDD Restaurant Shalini</div>
+        <p class="pj-desc">Modélisation MCD→MLD→MPD sur Mocodo, développement de requêtes SQL complexes, génération et injection de données de test réalistes via Oracle SQL Developer.</p>
+        <div class="pj-stack">
+          <span class="pj-tag">SQL</span><span class="pj-tag">Oracle</span>
+          <span class="pj-tag">Mocodo</span><span class="pj-tag">MCD / MLD / MPD</span>
+        </div>
+      </div>
+
+      <div class="pj-card r d2">
+        <div class="pj-bar"></div>
+        <div class="pj-ey">03 — Web</div>
+        <span class="pj-em">✈️</span>
+        <div class="pj-name">Site web Agence de voyage</div>
+        <p class="pj-desc">Interface web complète, responsive, avec JavaScript pour les interactions dynamiques, développée dans le respect d'un cahier des charges et des délais impartis.</p>
+        <div class="pj-stack">
+          <span class="pj-tag">HTML</span><span class="pj-tag">CSS</span>
+          <span class="pj-tag">JavaScript</span><span class="pj-tag">Responsive</span>
+        </div>
+      </div>
+
+      <div class="pj-card r d1">
+        <div class="pj-bar"></div>
+        <div class="pj-ey">04 — Analyse</div>
+        <span class="pj-em">📋</span>
+        <div class="pj-name">Cahier des charges — Site de voyage</div>
+        <p class="pj-desc">Recueil et analyse des besoins utilisateur, formalisation des spécifications fonctionnelles et techniques, rédaction complète de la documentation projet.</p>
+        <div class="pj-stack">
+          <span class="pj-tag">Analyse</span><span class="pj-tag">Spécifications</span>
+          <span class="pj-tag">UX Research</span><span class="pj-tag">Documentation</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="slabel r">À propos</div>
+    <h2 class="stitle r">Mon <em>parcours</em></h2>
+    <div class="ab-grid">
+
+      <div class="ab-body r">
+        <p>Étudiant en <strong>BUT Informatique Parcours A (Développement)</strong> à l'IUT d'Orsay, je suis passionné par la création logicielle depuis le lycée. Mon baccalauréat avec spécialités <strong>Mathématiques et NSI</strong> au Lycée Lakanal m'a donné de solides bases algorithmiques.</p>
+        <p>Ce qui me motive : résoudre des problèmes complexes, apprendre en construisant, et <strong>contribuer concrètement</strong> à un projet technique dès le premier jour.</p>
+        <p>Mes ambitions pour l'<strong>IA et le cloud</strong> sont au cœur de ma trajectoire. Je veux construire ma carrière autour de ces domaines et les explorer en profondeur pendant mon alternance.</p>
+        <div class="ints">
+          <span class="int">⚽ Football</span>
+          <span class="int">💪 Musculation</span>
+          <span class="int">🖥 Montage PC</span>
+          <span class="int">🎬 Photo & Vidéo</span>
+          <span class="int">🎮 Jeux vidéo</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="tl r d1">
+          <div class="tl-node">
+            <div class="tl-dot"></div>
+            <div class="tl-yr">2025 — 2028</div>
+            <div class="tl-role">BUT Informatique — Parcours A</div>
+            <div class="tl-org">IUT d'Orsay · Université Paris-Saclay</div>
+            <div class="tl-pts">
+              <div class="tl-pt">Réalisation d'applications : conception, développement, validation</div>
+              <div class="tl-pt">Alternance 24 mois — CFA numiA</div>
+              <div class="tl-pt">Projets en équipe avec méthodes agiles</div>
+            </div>
+          </div>
+          <div class="tl-node">
+            <div class="tl-dot b"></div>
+            <div class="tl-yr">2022 — 2025</div>
+            <div class="tl-role">Baccalauréat général</div>
+            <div class="tl-org b">Lycée Lakanal · Sceaux</div>
+            <div class="tl-pts">
+              <div class="tl-pt">Spécialités Mathématiques et NSI</div>
+              <div class="tl-pt">Diplôme obtenu en 2025</div>
+            </div>
+          </div>
+          <div class="tl-node">
+            <div class="tl-dot b"></div>
+            <div class="tl-yr">2021</div>
+            <div class="tl-role">Stage de découverte</div>
+            <div class="tl-org b">Télécom Paris</div>
+            <div class="tl-pts">
+              <div class="tl-pt">Découverte des métiers d'enseignant-chercheur et de doctorant</div>
+              <div class="tl-pt">Initiation aux outils de recherche scientifique</div>
+            </div>
           </div>
         </div>
 
-        <div class="card">
-          <div class="tiny">Mini formulaire (ouvre votre client mail)</div>
-          <form id="mailForm" class="form">
-            <label>
-              <span>Objet</span>
-              <input id="subject" type="text" placeholder="Ex: Alternance développement" required />
-            </label>
-            <label>
-              <span>Message</span>
-              <textarea id="message" rows="5" placeholder="Bonjour Sami, ..." required></textarea>
-            </label>
-            <button class="btn" type="submit">Générer l’e-mail</button>
-          </form>
+        <div class="lang-row r d2">
+          <div class="lc"><span class="lc-f">🇫🇷</span><div class="lc-n">Français</div><div class="lc-l">Langue maternelle</div></div>
+          <div class="lc"><span class="lc-f">🇬🇧</span><div class="lc-n">Anglais</div><div class="lc-l">Niveau B2</div></div>
+          <div class="lc"><span class="lc-f">🇩🇪</span><div class="lc-n">Allemand</div><div class="lc-l">Niveau A2</div></div>
         </div>
       </div>
-    </section>
 
-    <footer class="footer">
-      <div class="footline">
-        <span>© <span id="year"></span> Sami KARYM</span>
-        <span class="dot">•</span>
-        <a class="link" href="#about">Haut de page</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="slabel r">Contact</div>
+    <h2 class="stitle r">Travaillons <em>ensemble</em></h2>
+    <div class="ct-grid">
+
+      <div class="ct-left r">
+        <h3>Je suis disponible pour une alternance de 24 mois dès la rentrée 2025.</h3>
+        <div class="clinks">
+          <a href="mailto:sami.k.educ@gmail.com" class="clink">
+            <span class="cl-ic">✉</span><div><span class="cl-lb">Email</span><span class="cl-vl">sami.k.educ@gmail.com</span></div>
+          </a>
+          <a href="tel:+33637171685" class="clink">
+            <span class="cl-ic">📱</span><div><span class="cl-lb">Téléphone</span><span class="cl-vl">+33 6 37 17 16 85</span></div>
+          </a>
+          <a href="https://www.linkedin.com/in/sami-karym-a810a9385" target="_blank" rel="noreferrer" class="clink">
+            <span class="cl-ic">in</span><div><span class="cl-lb">LinkedIn</span><span class="cl-vl">Sami KARYM</span></div>
+          </a>
+          <a href="https://github.com/samikrm-prog" target="_blank" rel="noreferrer" class="clink">
+            <span class="cl-ic">⌥</span><div><span class="cl-lb">GitHub</span><span class="cl-vl">samikrm-prog</span></div>
+          </a>
+          <a href="CV_SKA_alternance.pdf" target="_blank" class="clink">
+            <span class="cl-ic">↓</span><div><span class="cl-lb">Curriculum Vitae</span><span class="cl-vl">Télécharger mon CV (PDF)</span></div>
+          </a>
+        </div>
       </div>
-    </footer>
-  </main>
 
-  <script src="script.js"></script>
+      <div class="r d1">
+        <form class="cform" id="cform">
+          <div class="fg"><label for="fn">Votre nom</label><input type="text" id="fn" placeholder="Marie Dupont" required /></div>
+          <div class="fg"><label for="fs">Objet</label><input type="text" id="fs" placeholder="Proposition d'alternance" required /></div>
+          <div class="fg"><label for="fm">Message</label><textarea id="fm" placeholder="Bonjour Sami, ..." required></textarea></div>
+          <button type="submit" class="bp" style="justify-content:center;width:100%">Envoyer via mail ↗</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fi">
+    <div class="fi-l">© <span id="yr"></span> Sami KARYM · BUT Informatique · IUT d'Orsay</div>
+    <div class="fi-r">
+      <a href="#hero">↑ Haut de page</a>
+      <a href="https://github.com/samikrm-prog" target="_blank">GitHub</a>
+      <a href="mailto:sami.k.educ@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
